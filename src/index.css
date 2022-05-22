@@ -1,13 +1,169 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+  box-sizing: border-box;
+ 
+}
+body{
+ background-image: url('./images/bg-intro-desktop.png');
+ background-color: rgb(200, 82, 82);
+ font-family: 'Poppins', sans-serif;
+ 
+}
+.App-container{
+  display: flex;
+  justify-content: space-around;
+
+
+}
+@media screen and (max-width: 1023px) {
+  .App-container {
+    flex-direction: column;
+    height: auto;
+    width: 80%;
+
+    
+  }
+  .header{
+    margin-top: 0px;
+  }
+}
+.description{
+  
+  flex: 0 0 45%;
+  margin-top: 180px;
+  color: #ffffff;
+  width: 300px;
+  height: auto;
+  margin-left: 200px;
+  margin-right: 40px;
+  
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.learning{
+  font-size: 44px;
 }
+
+.header{
+  position: absolute;
+  margin-top: 100px;
+  background-color: rgb(24, 9, 122);
+  width: 400px;
+  border-radius: 5px;
+  padding: 1px;
+  margin-left: 203px;
+  color: rgba(235, 229, 229, 0.903);
+  margin-bottom: 40px;
+  
+  
+}
+.bio{
+  margin-left: 30px;
+  
+}
+
+
+@media screen and (max-width: 1023px) {
+  .description {
+    flex: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    margin-bottom: 3rem;
+    margin-top: 0px;
+  }
+  .learning, .paragraph {
+    text-align: center;
+  }
+}
+  
+
+.header {
+ margin-left: 192px;
+  margin-top: 20px;
+  
+  
+}
+
+
+.my-inputs{
+  display: flex;
+  right: 130px;
+  margin-top: 190px;
+  margin-right: 97px;
+  background-color: white;  
+  min-width: 400px;
+  height: 420px;
+  border-radius: 5px ;
+  margin-left: 190px;
+ 
+  
+}
+.firstname{
+  font-family: 'Poppins',sans-serif;
+  width: 310px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  margin-left: 40px;
+  margin-top: 30px;
+  
+}
+.lastname{
+  font-family: 'Poppins',sans-serif;
+  width: 310px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 40px;
+}
+.email{
+  font-family: 'Poppins',sans-serif;
+  width: 310px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 40px;
+
+}
+
+input[type=password]{
+  font-family: 'Poppins',sans-serif;
+  width: 310px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 40px;
+
+}
+input[type=submit]{
+  font-family: 'Poppins',sans-serif;
+  width: 310px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: rgb(7, 72, 7);
+  color: white;
+  border-radius: 5px;
+  margin-left: 40px;
+  cursor: pointer;
+  
+}
+
+.error{
+  color:red;
+  font-weight: bold;
+  font-style:italic;
+  font-size:11px;
+  margin-top: 0px;
+  margin-bottom:1px;
+  margin-left: 200px;
+
+
+}
+
+  
+ 
